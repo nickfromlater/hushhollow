@@ -1,0 +1,26 @@
+/* Hush Hollow: support and privacy pages. The game's night palette: moonlight from the upper left, warm light only from
+   the ember, cold things blue-violet, no pure black. Fonts are self-hosted (OFL), so the pages call no one else. */
+@font-face{font-family:"Bagel Fat One";src:url(bagel.woff) format("woff");font-display:swap}
+@font-face{font-family:Figtree;src:url(figtree.woff) format("woff");font-weight:300 900;font-display:swap}
+:root{--night:#0f1830;--night2:#1d2c52;--snow:#eef4fb;--snow2:#c9d8ea;--snow3:#8fa6c6;--ember:#ffb24a;--ember2:#ff6d2e;--ice:#8ce6dc;--aurora:#a88bff;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--night)}
+body{margin:0;min-height:100vh;color:var(--snow2);font:17px/1.6 Figtree,system-ui,-apple-system,sans-serif;
+  background:radial-gradient(1200px 700px at 15% -10%,rgba(168,139,255,.16),transparent 60%),
+             radial-gradient(900px 600px at 50% 110%,rgba(255,109,46,.10),transparent 60%),
+             linear-gradient(180deg,var(--night2),var(--night) 55%)}
+main{max-width:680px;margin:0 auto;padding:40px 16px 72px}
+header{display:flex;align-items:center;gap:18px;margin-bottom:28px}
+header img{width:84px;height:84px;border-radius:19px;box-shadow:0 0 0 1px rgba(238,244,251,.12),0 10px 40px rgba(255,140,60,.25)}
+.brand{font-family:"Bagel Fat One",Figtree,sans-serif;font-size:34px;line-height:1.05;color:var(--snow);margin:0;letter-spacing:.2px}
+.tag{margin:4px 0 0;color:var(--snow3);font-size:15px}
+h1{font-family:"Bagel Fat One",Figtree,sans-serif;font-weight:400;color:var(--snow);font-size:30px;margin:8px 0 6px}
+h2{color:var(--snow);font-size:19px;margin:30px 0 6px}
+p{margin:0 0 12px}
+a{color:var(--ember);text-underline-offset:3px}
+a:hover{color:#ffd08a}
+.card{background:rgba(12,20,40,.55);border:1px solid rgba(201,216,234,.12);border-radius:16px;padding:18px 20px;margin:18px 0}
+.contact{border-color:rgba(255,178,74,.35)}
+.muted{color:var(--snow3);font-size:15px}
+nav{margin-top:40px;padding-top:18px;border-top:1px solid rgba(201,216,234,.12);display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+footer{margin-top:14px;color:var(--snow3);font-size:13px}
